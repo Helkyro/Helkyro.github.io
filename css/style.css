@@ -1,115 +1,84 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #111;
-  color: #f0f0f0;
-  line-height: 1.6;
-}
-
-header {
-  background-color: #000;
-  padding: 20px 0;
-}
-
-header .container {
+  padding: 0;
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+  cursor: none;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  width: 90%;
-  margin: auto;
+  justify-content: center;
 }
 
 .logo {
-  height: 50px;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  display: block;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #00d8ff;
-}
-
-.hero {
-  background: #000;
-  padding: 100px 20px;
+h1 {
+  font-size: 2.5rem;
   text-align: center;
 }
 
-.hero-text h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-.hero-text p {
-  font-size: 20px;
-  color: #ccc;
-}
-
-.section {
-  padding: 60px 20px;
-}
-
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
-
-.services-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.services-list li {
-  margin: 10px 0;
-  font-size: 18px;
-}
-
-video {
-  width: 100%;
-  border-radius: 8px;
+.video-container {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+iframe {
+  max-width: 90vw;
+  border-radius: 10px;
 }
 
-input, textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
+/* Custom cursor */
+.cursor, .cursor-border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: transform 0.15s ease;
 }
 
-button {
-  background-color: #00d8ff;
-  color: #000;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
+.cursor {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  transform: translate(-50%, -50%);
 }
 
-button:hover {
-  background-color: #00bde3;
+.cursor-border {
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #000;
-  font-size: 14px;
+@media (max-width: 768px) {
+  .cursor, .cursor-border {
+    display: none;
+  }
+}
+
+/* Canvas for particles */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  pointer-events: none;
 }
