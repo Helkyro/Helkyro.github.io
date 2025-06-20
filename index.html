@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelkyroProduction</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="assets/logo-placeholder.png" alt="HelkyroProduction" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="accueil" class="hero">
+    <div class="hero-text">
+      <h1>HelkyroProduction</h1>
+      <p>Créateur d’émotions en images – Production audiovisuelle professionnelle</p>
+    </div>
+  </section>
+
+  <section id="apropos" class="section">
+    <div class="container">
+      <h2>À propos</h2>
+      <p>
+        HelkyroProduction est une société spécialisée dans la création de contenus audiovisuels de qualité : captation vidéo, montage, drone, interviews et plus encore. 
+        Basée sur la passion, la rigueur et l'esthétique, notre équipe vous accompagne de l'idée jusqu'à la diffusion.
+      </p>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Nos services</h2>
+      <ul class="services-list">
+        <li>🎬 Captation multi-caméras</li>
+        <li>✂️ Montage vidéo professionnel</li>
+        <li>🚁 Prises de vue par drone</li>
+        <li>🎤 Interviews & reportages</li>
+        <li>🎞️ Habillage graphique / motion design</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <video controls>
+        <source src="assets/videos/ton-lien-video.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/ton-id" method="POST">
+        <input type="text" name="name" placeholder="Nom" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Votre message..." required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HelkyroProduction — Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
